@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <input type="text" placeholder="enter text here..."id="message"/>
+  <input type="button" value="post" onClick="handleClick()"/>
+  <ul id="messages"></ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./app.js"></script>
+  <script>
+  $(function(){
+    setInterval(getData,500);
+  });
+  </script>
+</body>
+</html>
